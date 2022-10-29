@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * { /* ALAPBEÁLLÍTÁSOK! */
     margin:0;
     padding: 0;
@@ -6,6 +8,10 @@
 
 html { /* Szokás a betűméretet beállítani */
     font-size: 14px 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 #container {
@@ -23,12 +29,20 @@ html { /* Szokás a betűméretet beállítani */
 }
 
 #content .news {
-    padding: 10px;
+    
     max-width: 49.99999%;
     float: left;
     text-align: justify;
     line-height: 1.5;
     font-size: .8rem; /* 0.8rem-et jelent */
+}
+
+#content .news:first-child {
+    padding-right: 10px;
+}
+
+#content .news:nth-child(2) { /*  megfogjuk másodikat */
+    padding-left: 10px;
 }
 
 #content::after, #nav ul { /* a kódot a w3schools-ból töltöttem le! search: w3school clearfix FLOAT-olásnál mindig kell clearfix! */
@@ -46,6 +60,10 @@ html { /* Szokás a betűméretet beállítani */
     float: left; /* egy sorban legyenek a listánk elemei. display: inline is jó */
     text-align: center;
     border-right: 1px dotted black;
+}
+
+nav ul li:last-child {
+    border-right: none; /* eltüntettem a jobb oldali link borderjét */
 }
 
 #nav ul li a {
