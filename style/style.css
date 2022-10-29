@@ -1,0 +1,64 @@
+* { /* ALAPBEÁLLÍTÁSOK! */
+    margin:0;
+    padding: 0;
+    box-sizing: border-box /* utolsó propertyhez nem kell ; */
+}
+
+html { /* Szokás a betűméretet beállítani */
+    font-size: 14px 
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto; /* totál középre igazítja */
+}
+
+#header, #content {
+    padding: 30px 0;
+}
+
+#footer {
+    background: orange;
+    padding: 5px 0; /* fölül alul és oldalt, tudni sorrend! */
+}
+
+#content .news {
+    padding: 10px;
+    max-width: 49.99999%;
+    float: left;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: .8rem; /* 0.8rem-et jelent */
+}
+
+#content::after, #nav ul { /* a kódot a w3schools-ból töltöttem le! search: w3school clearfix FLOAT-olásnál mindig kell clearfix! */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#nav ul {
+    list-style: none; /* hogy ne legyen a listánkon gombóc! */
+}
+
+#nav ul li {
+    width: 19.9999%;
+    float: left; /* egy sorban legyenek a listánk elemei. display: inline is jó */
+    text-align: center;
+    border-right: 1px dotted black;
+}
+
+#nav ul li a {
+    background: orange;
+    padding: 20px;
+    width: 100%;
+    display: block; /* elfoglalja a rendelkezésre álló helyet, így ha a környékre kattintok, akkor is be lehet lépni a menüpontra */
+    text-decoration: none;
+    color: black;
+}
+
+#nav ul li a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
