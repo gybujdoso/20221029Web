@@ -45,7 +45,7 @@ body{
     padding-left: 10px;
 }
 
-#content::after, #nav ul { /* a kódot a w3schools-ból töltöttem le! search: w3school clearfix FLOAT-olásnál mindig kell clearfix! */
+#content::after, #nav ul::after { /* a kódot a w3schools-ból töltöttem le! search: w3school clearfix FLOAT-olásnál mindig kell clearfix! */
     content: "";
     clear: both;
     display: table;
